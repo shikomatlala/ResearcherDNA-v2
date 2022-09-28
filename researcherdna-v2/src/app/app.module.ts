@@ -8,6 +8,8 @@ import { ToolboxComponent } from './toolbox/toolbox.component';
 import { OptionsComponent } from './toolbox/options/options.component';
 import { OptionsService } from './toolbox/options/options.service';
 import { HeaderComponent } from './header/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { HomeHeaderComponent } from './home/home-header/home-header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HeaderComponent } from './header/header/header.component';
     NavbarComponent,
     ToolboxComponent,
     OptionsComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    HomeHeaderComponent
   ],
   imports: [
     BrowserModule,
