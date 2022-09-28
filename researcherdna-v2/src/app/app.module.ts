@@ -7,13 +7,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
 import { OptionsComponent } from './toolbox/options/options.component';
 import { OptionsService } from './toolbox/options/options.service';
+import { HeaderComponent } from './header/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ToolboxComponent,
-    OptionsComponent
+    OptionsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

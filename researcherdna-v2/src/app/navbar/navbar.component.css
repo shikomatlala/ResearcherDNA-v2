@@ -13,14 +13,14 @@ body {
     left: 0;
     background-color: rgba(248, 248, 248, 0);
     overflow-x: hidden;
-    padding-top: 100px;
-    border-right: 1px solid rgb(237, 237, 237);
+    padding-top: 80px;
+    /* border-right: 1px solid rgb(237, 237, 237); */
   }
 
   .sidenav a {
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 8px 15px 8px;
+    padding: 0px 8px 40px 8px;
     text-decoration: none;
     font-size: 10px;
     color: #818181;
@@ -70,4 +70,5 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav {padding-bottom: 15px;}
     .sidenav a {font-size: 10px;}
+    .sidenav {height: 90%;}
   }
