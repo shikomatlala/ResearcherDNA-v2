@@ -10,6 +10,37 @@
 
 }
 
+.home-divs-display{
+  display: inline-flex;
+}
+
+.home-div{
+  width: 29rem;
+  border:none;
+}
+.card-body-c{
+  display: inline-flex;
+}
+.card-header-c{
+  font-weight:lighter;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+}
+
+.grid-container > div {
+  background-color: rgb(255, 254, 254);
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  /* font-size: 30px; */
+}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -37,7 +68,7 @@ body {
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: rgb(247, 247, 247);
+  background-color: #2195f325;;
   overflow-x: hidden;
   padding-top: 20px;
   padding-left:20px ;
@@ -105,7 +136,17 @@ body {
   padding: 0px 10px;
 }
 
+
+@media screen and (max-width: 1024){
+  .grid-container{grid-template-columns: repeat(3, 1fr);}
+}
+
+@media screen and (max-width: 640){
+  .grid-container{grid-template-columns: repeat(2, 1fr);}
+}
+
 @media screen and (max-height: 450px) {
+  .grind-containter{grid-template-columns: repeat(1, 1fr);}
   .sidenav {padding-top: 15px;}
   .sidenav {padding-bottom: 15px;}
   .sidenav a {font-size: 10px;}
@@ -113,10 +154,14 @@ body {
   .sidenav-header {display: none;}
 }
 
-@media screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px;}
+@media screen and (max-width: 450px){
+  .grid-container{grid-template-columns: repeat(1, 1fr);}
+  .home-divs-display{display: block;}
+  .home-div{width: 80%; font-size: 12px;}
+  .card-header-c{ font-size: 16px;}
+  /* .sidenav {padding-top: 15px;}
   .sidenav {padding-bottom: 15px;}
   .sidenav a {font-size: 10px;}
   .sidenav {display: none;}
-  .sidenav-header {display: none;}
+  .sidenav-header {display: none;} */
 }
