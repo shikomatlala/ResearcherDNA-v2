@@ -10,6 +10,12 @@ import { OptionsService } from './toolbox/options/options.service';
 import { HeaderComponent } from './header/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { HomeHeaderComponent } from './home/home-header/home-header.component';
+import { StudentCardComponent } from './home/student-card/student-card.component';
+import { StudentProjectComponent } from './home/student-project/student-project.component';
+import { StudentsProjectsComponent } from './home/students-projects/students-projects.component';
+import { HomeToolboxComponent } from './home/home-toolbox/home-toolbox.component';
+import { HomeForumComponent } from './home/home-forum/home-forum.component';
+import { HomeAccountComponent } from './home/home-account/home-account.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { HomeHeaderComponent } from './home/home-header/home-header.component';
     OptionsComponent,
     HeaderComponent,
     HomeComponent,
-    HomeHeaderComponent
+    HomeHeaderComponent,
+    StudentCardComponent,
+    StudentProjectComponent,
+    StudentsProjectsComponent,
+    HomeToolboxComponent,
+    HomeForumComponent,
+    HomeAccountComponent
   ],
   imports: [
     BrowserModule,
