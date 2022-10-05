@@ -16,6 +16,7 @@ import { StudentsProjectsComponent } from './home/students-projects/students-pro
 import { HomeToolboxComponent } from './home/home-toolbox/home-toolbox.component';
 import { HomeForumComponent } from './home/home-forum/home-forum.component';
 import { HomeAccountComponent } from './home/home-account/home-account.component';
+import { StudentHomeComponent } from './students/student-home/student-home.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeAccountComponent } from './home/home-account/home-account.component
     StudentsProjectsComponent,
     HomeToolboxComponent,
     HomeForumComponent,
-    HomeAccountComponent
+    HomeAccountComponent,
+    StudentHomeComponent
   ],
   imports: [
     BrowserModule,
