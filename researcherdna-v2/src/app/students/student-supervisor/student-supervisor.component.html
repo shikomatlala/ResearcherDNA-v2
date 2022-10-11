@@ -64,7 +64,7 @@
                                 <th style="font-weight:normal">Start Date</th>
                                 <th style="font-weight:normal">Messages</th>
                             </tr>
-                            <tr *ngFor="let student of studentsList; ;let i = index;">
+                            <tr *ngFor="let student of studentsList; ;let i = index;" (click)="viewStudent(student.studNumber)">
                                 <td *ngIf="student.supervisorId.supervisorId == supervisor.supervisorId"> {{student.studentCount}}</td>
                                 <td *ngIf="student.supervisorId.supervisorId == supervisor.supervisorId">{{student.studNumber}}</td>
                                 <td *ngIf="student.supervisorId.supervisorId == supervisor.supervisorId">

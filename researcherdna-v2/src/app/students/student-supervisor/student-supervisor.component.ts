@@ -103,6 +103,10 @@ export class StudentSupervisorComponent implements OnInit {
     this.display = "unset";
   }
 
+  viewStudent(studNumber: any)
+  {
+    console.log(localStorage.getItem('active-link-number'));
+  }
   openedStudent = { studentCount: 1, studNumber: "216955961", firstName: "Shiko",lastName: "Matlala", supervisorId: {status: true, supervisorId: "280233"}, startDate: "Tue 04 Oct 2022", studentComplains: 1};
   display_assign_supervisor_card = "none";
   openAssignSupervisor(student: any){
