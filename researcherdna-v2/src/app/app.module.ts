@@ -17,6 +17,7 @@ import { HomeToolboxComponent } from './home/home-toolbox/home-toolbox.component
 import { HomeForumComponent } from './home/home-forum/home-forum.component';
 import { HomeAccountComponent } from './home/home-account/home-account.component';
 import { StudentHomeComponent } from './students/student-home/student-home.component';
+import { StudentSupervisorComponent } from './students/student-supervisor/student-supervisor.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { StudentHomeComponent } from './students/student-home/student-home.compo
     HomeToolboxComponent,
     HomeForumComponent,
     HomeAccountComponent,
-    StudentHomeComponent
+    StudentHomeComponent,
+    StudentSupervisorComponent
   ],
   imports: [
     BrowserModule,
