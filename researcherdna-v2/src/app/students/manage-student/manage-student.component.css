@@ -1,0 +1,135 @@
+.-sidenav {
+    user-select: none;
+    text-align: center;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 150px;
+    background-color: rgb(248, 248, 248);
+    overflow-x: hidden;
+    padding-top: 80px;
+  }
+
+
+
+[data-tooltip]:before{
+  content: attr(data-tooltip);
+  position: absolute;
+  opacity: 0;
+  transition-delay: 1s;
+  transition: all 0.25s ease;
+  padding: 10px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px silver;
+}
+  
+[data-tooltip]:hover:before{
+  font-size: 15px;
+  transition-delay: 0.5s;
+  opacity: 1;
+  position: fixed;
+  z-index: 1;
+  background: rgb(214, 214, 214);
+  margin-top: -50px;
+  margin-left: 20px;
+}
+
+[data-tooltip]:not([data-tooltip-persistent]):before{
+  pointer-events:none;
+}
+.manage-student-home-container{
+  display:inline-flex; width:100%; padding-top:190px; padding-left:75px; padding-right:5px; height:100%; z-index: 0;
+}
+.card{
+  z-index: -1;
+}
+.manage-student-home-container-card{
+  width: 100%; height: 100%;
+}
+.manage-student-inner-nav-container{
+  position: fixed; top:110px; padding-left: 70px; width: 100%; background-color: rgb(233, 237, 242); text-align: center;
+}
+
+.manage-student-inner-nav-icon-positioner{
+  position:relative;
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  
+}
+
+.create-goal-ul-li{
+  color: #919191;
+  font-size: 11px;
+  margin: 0 0 -5px;
+}
+
+.messages:hover{
+  background-color: rgba(210, 164, 26, 0.164);
+}
+
+.goals:hover{
+  background-color: rgba(0, 128, 0, 0.164);
+}
+
+.files:hover{
+  background-color: rgba(128, 0, 128, 0.164);
+}
+
+.appointments:hover{
+  background-color: rgb(138, 124, 1, 0.164);
+}
+
+
+.input_table{
+  outline: none;
+  border: 1px solid;
+  border-color: darkgrey;
+  color: rgb(1, 37, 83);
+  background-color: inherit;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 1rem 3.5rem 1rem 0.75rem;
+  color: rgb(101, 101, 101);
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Halvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+.input_table:focus{
+  border-bottom: 1px solid rgb(0, 153, 255);
+}
+
+input[type="datetime-local"]{
+  display:block;
+  position: relative;
+  padding: 1rem 3.5rem 1rem 0.75rem;
+  color: rgb(101, 101, 101);
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  border:none;
+  border-bottom: 1px solid darkgrey;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="datetime-local"]:focus{
+  outline:none;
+  border:none;
+  border-bottom: 1px solid rgb(0, 153, 255);
+  box-shadow: 1 0 0 0.25rem rgba(0, 120, 250, 0.1);
+}

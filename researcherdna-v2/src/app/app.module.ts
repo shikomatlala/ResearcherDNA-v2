@@ -18,6 +18,8 @@ import { HomeForumComponent } from './home/home-forum/home-forum.component';
 import { HomeAccountComponent } from './home/home-account/home-account.component';
 import { StudentHomeComponent } from './students/student-home/student-home.component';
 import { StudentSupervisorComponent } from './students/student-supervisor/student-supervisor.component';
+import { ManageStudentComponent } from './students/manage-student/manage-student.component';
+import { InnerHeaderComponent } from './inner-header/inner-header.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { StudentSupervisorComponent } from './students/student-supervisor/studen
     HomeForumComponent,
     HomeAccountComponent,
     StudentHomeComponent,
-    StudentSupervisorComponent
+    StudentSupervisorComponent,
+    ManageStudentComponent,
+    InnerHeaderComponent
   ],
   imports: [
     BrowserModule,
