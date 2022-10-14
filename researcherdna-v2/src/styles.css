@@ -86,7 +86,7 @@ body {
   cursor: pointer;
   height: 80px;
 }
-.main-sidenav a#login-as-guest:focus{ background-color: yellow; }
+.main-sidenav a#login-as-guest:focus{ background-color: yellow;}
 
 .main-sidenav label{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -129,7 +129,7 @@ body {
 /* ============================== */
 /* ==== INNER HEADER STYLES ===== */
 /* ============================== */
-.home-header-div{
+/* .home-header-div{
   width: auto;
   border:none;
   margin-right: auto;
@@ -140,9 +140,9 @@ body {
 }
 .card-body{
   width: 100%;
-}
+} */
 
-.main-card-body-c{
+/* .main-card-body-c{
   display: inline-flex;
   background-color: rgb(5, 69, 148);
   top:10px;
@@ -152,37 +152,9 @@ body {
   padding:0;
 
   border-bottom: 1px solid rgb(214, 214, 214);
-}
+} */
 
-.card{
-  background-color: rgb(233, 237, 242);
-}
 
-.left-align-header-title{
-  width:100%;
-  position:relative;
-  top: -10px;
-  cursor: pointer;
-}
-
-.right-align-header-icons{
-  width:70%;
-  display:inline-flex;
-  padding-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.header-icons{
-  padding-left: 30px;
-  padding-right: 30px;
-  display: block;
-  text-align: center;
-  font-size: 11px;
-  color: #818181;
-  cursor: pointer;
-}
 
 .inner-header{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -196,7 +168,7 @@ body {
   z-index: 98;;
   top: 0;
   left: 0;
-  background-color: rgb(1, 11, 24);
+  background-color: rgb(233, 237, 242);
   padding-top: 10px;
 }
 
