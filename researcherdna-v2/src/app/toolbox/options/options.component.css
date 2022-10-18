@@ -53,6 +53,25 @@
   /* border-bottom: 1px solid rgb(237, 237, 237); */
 }
 
+.header-image
+{
+  background-image: url("../../../assets/toolbox/header-pictures/1231231-header.jpeg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+}
+.guideline-header-text{
+  background-color: #e8e8e8c0;
+  backdrop-filter:blur(5px);
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .left-align-header-title{
   width:30%;
   position:relative;
