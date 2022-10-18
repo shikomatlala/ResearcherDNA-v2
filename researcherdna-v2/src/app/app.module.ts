@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,6 +21,7 @@ import { StudentHomeComponent } from './students/student-home/student-home.compo
 import { StudentSupervisorComponent } from './students/student-supervisor/student-supervisor.component';
 import { ManageStudentComponent } from './students/manage-student/manage-student.component';
 import { InnerHeaderComponent } from './inner-header/inner-header.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +41,20 @@ import { InnerHeaderComponent } from './inner-header/inner-header.component';
     StudentHomeComponent,
     StudentSupervisorComponent,
     ManageStudentComponent,
-    InnerHeaderComponent
+    InnerHeaderComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: '',  component: HomeComponent},
+      {path: 'supervisor-students',  component: StudentSupervisorComponent},
+      {path: 'admin-students',  component: StudentHomeComponent},
+      {path: 'toolbox', component: ToolboxComponent},
+      {path: '**',  component: NotfoundComponent},//The 2 asterics represent a wildcard meaning it will catch any error urls
+    ])
   ],
   providers: [
     OptionsService
