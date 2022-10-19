@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { activePageName } from './globals/globalVariables';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'researcherdna-v2';
+  getActivePageName(){
+    var index:any = localStorage.getItem('sidenav-active-tag-number')
+    return activePageName[index];
+  }
 }

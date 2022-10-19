@@ -22,6 +22,7 @@ import { StudentSupervisorComponent } from './students/student-supervisor/studen
 import { ManageStudentComponent } from './students/manage-student/manage-student.component';
 import { InnerHeaderComponent } from './inner-header/inner-header.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     StudentSupervisorComponent,
     ManageStudentComponent,
     InnerHeaderComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
