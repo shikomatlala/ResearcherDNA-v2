@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-inner-header',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inner-header.component.css']
 })
 export class InnerHeaderComponent implements OnInit {
-
+  @Input() activePageName = "";
   constructor() { }
 
   ngOnInit(): void {
