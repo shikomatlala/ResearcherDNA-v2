@@ -8,8 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InnerHeaderComponent implements OnInit {
   @Input() activePageName = "";
   constructor() { }
-
+  activeUser: any;
   ngOnInit(): void {
+    this.activeUser = JSON.parse(localStorage.getItem('active-user')!);
+    
   }
 
 }

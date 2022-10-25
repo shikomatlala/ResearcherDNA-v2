@@ -31,7 +31,9 @@ export class NavbarComponent implements OnInit {
     this.setInactive,
     this.setInactive];
 
+  activeUser = JSON.parse(localStorage.getItem('active-user')!);
   ngOnInit(): void {
+    console.log(this.activeUser);
     if(localStorage.getItem('sidenav-active-tag-number') == null){
       setInitialPageActive(this.pageStatusesArray, this.setActive, 0)
     }

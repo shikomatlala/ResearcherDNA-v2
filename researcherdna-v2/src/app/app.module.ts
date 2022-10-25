@@ -23,6 +23,8 @@ import { ManageStudentComponent } from './students/manage-student/manage-student
 import { InnerHeaderComponent } from './inner-header/inner-header.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -43,16 +45,22 @@ import { LoginComponent } from './login/login.component';
     StudentSupervisorComponent,
     ManageStudentComponent,
     InnerHeaderComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ProjectsComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '',  component: HomeComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'home',  component: HomeComponent},
       {path: 'supervisor-students',  component: StudentSupervisorComponent},
+      {path: 'forum', component: ForumComponent},
       {path: 'admin-students',  component: StudentHomeComponent},
+      {path: 'student-project', component: StudentProjectComponent},
+      {path: 'projects', component: ProjectsComponent},
       {path: 'toolbox', component: ToolboxComponent},
       {path: '**',  component: NotfoundComponent},//The 2 asterics represent a wildcard meaning it will catch any error urls
     ])
