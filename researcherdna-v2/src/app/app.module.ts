@@ -25,6 +25,12 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ForumComponent } from './forum/forum.component';
+import { StudentProjectsListComponent } from './supervisor/student-projects-list/student-projects-list.component';
+import { SuperviseStudentHomeComponent } from './supervisor/view-student/supervise-student-home/supervise-student-home.component';
+import { MessageComponent } from './supervisor/view-student/message/message.component';
+import { GoalComponent } from './supervisor/view-student/goal/goal.component';
+import { FileComponent } from './supervisor/view-student/file/file.component';
+import { StudentComponent } from './supervisor/view-student/student/student.component';
 
 @NgModule({
   declarations: [
@@ -47,20 +53,35 @@ import { ForumComponent } from './forum/forum.component';
     InnerHeaderComponent,
     NotfoundComponent,
     ProjectsComponent,
-    ForumComponent
+    ForumComponent,
+    StudentProjectsListComponent,
+    SuperviseStudentHomeComponent,
+    MessageComponent,
+    GoalComponent,
+    FileComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: 'login', component: LoginComponent},
+      {path: '', component: LoginComponent},
       {path: 'home',  component: HomeComponent},
       {path: 'supervisor-students',  component: StudentSupervisorComponent},
       {path: 'forum', component: ForumComponent},
       {path: 'admin-students',  component: StudentHomeComponent},
       {path: 'student-project', component: StudentProjectComponent},
-      {path: 'projects', component: ProjectsComponent},
+      {
+        path: 'projects', component: ProjectsComponent,
+        children:[
+          {path: '', component: StudentProjectsListComponent},
+          {path: 'message', component: MessageComponent},
+          {path: 'goal', component: GoalComponent},
+          {path: 'file', component: FileComponent},
+          {path: 'student', component: StudentComponent}
+        ]
+      },
       {path: 'toolbox', component: ToolboxComponent},
       {path: '**',  component: NotfoundComponent},//The 2 asterics represent a wildcard meaning it will catch any error urls
     ])
