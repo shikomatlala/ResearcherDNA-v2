@@ -22,6 +22,42 @@
   display: inline-flex;
 }
 
+.mail-list-class{
+  padding-bottom: 50px;padding-top:6px;overflow: scroll;height:40rem;width:100%; user-select: none; cursor: pointer; background-color: #f5f4f4;padding-left: 5px;
+}
+
+.mail-list-class-message-item{
+  display:inline-flex; width: 100%; border-bottom: 1px solid rgb(221, 221, 221);background-color: #f5f5f5;
+}
+.mail-list-class-message-item:hover
+{
+  background-color: white
+}
+
+.mail-list-class-message-description-status
+{
+  background-color:rgba(158, 230, 158, 0); color:green; width:20px; text-align: center; width:20%;padding-top: 5px; padding-bottom: 5px;color: 12px;
+}
+.mail-list-class-message-description-from
+{
+  width:50%; padding-top: 5px; padding-bottom: 5px; padding-left:5px;font-size: 15px;color:#656565
+}
+.mail-list-class-message-description-subject
+{
+  width:100%; padding-top: 5px; padding-bottom: 5px;font-size: 15px;
+}
+
+.mail-list-class-message-description-date
+{
+  width:30%;text-align:center; padding-top: 5px; padding-bottom: 5px;font-size: 12px;color:#656565
+}
+
+.mail-list-class-message-description-reply
+{
+  width:10%;text-align: center;padding-right:10px; padding-top: 5px; padding-bottom: 5px;
+}
+
+
 .home-div{
   width: auto;
   border:none;

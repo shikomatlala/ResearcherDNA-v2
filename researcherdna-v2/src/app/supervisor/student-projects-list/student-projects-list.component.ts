@@ -58,7 +58,7 @@ export class StudentProjectsListComponent implements OnInit {
     console.log(localStorage.getItem('active-link-number'));
     //set the userId as the active use
     localStorage.setItem('active-student-on-display', studNumber);
-    this.router.navigate(['projects/student'])
+    this.router.navigate(['projects/message'])
 
   }
   openedStudent = { studentCount: 1, studNumber: "216955961", firstName: "Shiko",lastName: "Matlala", supervisorId: {status: true, supervisorId: "280233"}, startDate: "Tue 04 Oct 2022", studentComplains: 1};
