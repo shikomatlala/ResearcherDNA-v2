@@ -31,6 +31,7 @@ import { MessageComponent } from './supervisor/view-student/message/message.comp
 import { GoalComponent } from './supervisor/view-student/goal/goal.component';
 import { FileComponent } from './supervisor/view-student/file/file.component';
 import { StudentComponent } from './supervisor/view-student/student/student.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { StudentComponent } from './supervisor/view-student/student/student.comp
     MessageComponent,
     GoalComponent,
     FileComponent,
-    StudentComponent
+    StudentComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +73,7 @@ import { StudentComponent } from './supervisor/view-student/student/student.comp
       {path: 'supervisor-students',  component: StudentSupervisorComponent},
       {path: 'forum', component: ForumComponent},
       {path: 'admin-students',  component: StudentHomeComponent},
+      {path: 'register', component: RegisterComponent},
       {path: 'student-project', component: StudentProjectComponent},
       {
         path: 'projects', component: ProjectsComponent,
