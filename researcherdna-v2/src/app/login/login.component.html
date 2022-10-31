@@ -16,12 +16,13 @@
             </div>
             <br>
 
-            <div>
-              <div>
-                <button (click)="loginUser()" type="submit" class="btn btn-primary">Submit</button>
+            <div style="display:inline-flex; width:100%">
+              <div style="width:100%">
+                <button (click)="loginUser()" type="submit" class="btn btn-primary">Login</button>
               </div>
-              <div>
-                <a (click)="openRegisterPage()" class="link-primary">Primary link</a>
+              <div style="width:30%">
+              <small id="emailHelp" class="form-text text-muted">New User?</small><br>
+                <a (click)="openRegisterPage()" class="link-primary" style="cursor:pointer">Register</a>
               </div>
             </div>
 

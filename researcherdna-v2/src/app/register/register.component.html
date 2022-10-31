@@ -20,7 +20,7 @@
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input #password type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              <small id="emailHelp" class="form-text text-muted">Password should not contain less than 8 characters<br><span style="color:red">- At least 2 Numbers</span><br><span style="color:red">- At least 2 Special characters e.g. ($, #, @, + ...)</span><br><span style="color:red">- At least 2 alphabets</span></small>
+              <small id="emailHelp" class="form-text text-muted">Password contain 8 or more characters<br><span style="color:red">- At least 2 Numbers</span><br><span style="color:red">- At least 2 Special characters e.g. ($, #, @, + ...)</span><br><span style="color:red">- At least 2 alphabets</span></small>
         
             </div>
             <br>
@@ -30,12 +30,13 @@
               </div>
               <br>
 
-            <div>
-              <div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <div style="display:inline-flex; width:100%">
+              <div style="width:100%">
+                <button type="submit" class="btn btn-primary">Register</button>
               </div>
-              <div>
-                <a class="link-primary">Primary link</a>
+              <div style="width:30%">
+                <small id="emailHelp" class="form-text text-muted">Already Registered?</small><br>
+                <a routerLink="" class="link-primary" style="cursor:pointer">Login</a>
               </div>
             </div>
 
