@@ -32,6 +32,8 @@ import { GoalComponent } from './supervisor/view-student/goal/goal.component';
 import { FileComponent } from './supervisor/view-student/file/file.component';
 import { StudentComponent } from './supervisor/view-student/student/student.component';
 import { RegisterComponent } from './register/register.component';
+import { RegisterService } from './services/student/register/register.service';
+import { LoginAfterRegisterComponent } from './login-after-register/login-after-register.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { RegisterComponent } from './register/register.component';
     GoalComponent,
     FileComponent,
     StudentComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginAfterRegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +93,8 @@ import { RegisterComponent } from './register/register.component';
     ])
   ],
   providers: [
-    OptionsService
+    OptionsService,
+    RegisterService
   ],
   bootstrap: [AppComponent]
 })
