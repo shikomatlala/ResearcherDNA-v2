@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
@@ -76,7 +76,10 @@ import { LoginAfterRegisterComponent } from './login-after-register/login-after-
       {path: 'supervisor-students',  component: StudentSupervisorComponent},
       {path: 'forum', component: ForumComponent},
       {path: 'admin-students',  component: StudentHomeComponent},
-      {path: 'register', component: RegisterComponent},
+      {path: 'login', component: LoginAfterRegisterComponent},
+      {path: 'register', component: RegisterComponent, 
+      children:[
+      ]},
       {path: 'student-project', component: StudentProjectComponent},
       {
         path: 'projects', component: ProjectsComponent,
